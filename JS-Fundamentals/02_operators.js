@@ -63,18 +63,40 @@
 ///////////////////////////////////////////
 // COMPARISON OPERATOR
 ///////////////////////////////////////////
-var a = 15;
-var b = 10;
-var c = 10;
-console.log(a > b); // true
-console.log(a < b); // false
-console.log(a == b); // false
-console.log(b == c); // true
+// var a = 15;
+// var b = 10;
+// var c = 10;
+// console.log(a > b); // true
+// console.log(a < b); // false
+// console.log(a == b); // false
+// console.log(b == c); // true
 
-var d = 5;
-var e = 4;
-console.log(d == e); // false
-console.log(d > e); // true
-console.log(d >= e); // true
-console.log(d <= e); // false
-console.log(d != e); // true
+// var d = 5;
+// var e = 4;
+// console.log(d == e); // false
+// console.log(d > e); // true
+// console.log(d >= e); // true
+// console.log(d <= e); // false
+// console.log(d != e); // true
+
+///////////////////////////////////////////
+// LOGICAL OPERATOR
+///////////////////////////////////////////
+var stuAge = 20;
+// AND => &&
+var condition01 = stuAge >= 18;
+var condition02 = stuAge <= 35;
+// console.log(condition01 && condition02);
+// AND(&&) , false are friends
+
+// OR  => ||
+// OR(||) , true are friends
+var stuCast = "GEN";
+var condition01 = stuCast == "SC";
+var condition02 = stuCast == "ST";
+var condition03 = stuCast == "MIN";
+// console.log(condition01 || condition02 || condition03);
+
+// NOT (!)
+console.log(!true);
+console.log(!false);
