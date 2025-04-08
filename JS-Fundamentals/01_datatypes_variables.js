@@ -13,6 +13,11 @@
 ///////////////////////////////////
 // 02. Variables
 ///////////////////////////////////
+// last name --> Sentence Case
+// Last Name --> Sentence Case
+// lastName --> Camel Case
+// arjunMeda --> Camel Case
+// arjun_meda --> Snake Case
 
 // Identifiers/Name & Literals/Value
 var firstName = "Arpit";
