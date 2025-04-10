@@ -27,10 +27,13 @@ var grade;
 
 // 90 ... 100
 var conditionO = marks >= 90;
+
 // 70 ... 89
 var conditionG = marks >= 70 && marks < 90;
+
 // 50 ... 69
 var conditionA = marks >= 50 && marks < 70;
+
 // 20 ... 49
 var conditionB = marks >= 20 && marks < 50;
 
