@@ -89,3 +89,14 @@ const newAnimals = animals.slice();
 // end = arr.length;
 console.log(newAnimals);
 */
+
+// splice(start);
+// splice(start, deleteCount);
+// splice(start, deleteCount, item1);
+// splice(start, deleteCount, item1, item2);
+
+const months = ["Jan", "March", "April", "June"];
+const deleted = months.splice(1, 2, "DDUGKY", "BHOPAL", "TRAINEING");
+
+console.log(deleted);
+console.log(months);
