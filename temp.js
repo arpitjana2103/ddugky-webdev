@@ -128,7 +128,7 @@ Expected Output:
 
 "javascript is this world hello"
 */
-
+/*
 const input = "  Hello123!   @World$$        this-- is45 ###JavaScript ";
 
 const formatWord = function (word) {
@@ -150,3 +150,45 @@ const res = input
     .join(" ");
 
 console.log(res);
+*/
+/*
+Question 4: Extract Valid Numbers and Sort
+You are given an array of mixed strings, where each string might contain alphabetic characters, symbols, and digits.
+Write a function extractAndSortNumbers(arr) that:
+
+    Extracts only the numeric characters from each string.
+    Converts the result to a number.
+    Filters out any values that result in an empty string or NaN.
+    Returns a sorted array of valid numbers in ascending order.
+> Must use method chaining and no loops.
+Example Input:
+
+const input = ['a12b', '##98', 'hello123', '$$', '0042'];
+
+Expected Output:
+
+[12, 42, 98, 123]
+*/
+/*
+const input = ["a12b", "##98", "hello123", "0000000^", "$$", "0042"];
+
+const getNum = function (str) {
+    const numStr = str
+        .split("")
+        .filter(function (ch) {
+            const asciiVal = ch.charCodeAt(0);
+            return asciiVal >= 48 && asciiVal <= 57;
+        })
+        .join("");
+
+    if (numStr === "") return NaN;
+    return Number(numStr);
+};
+
+const res = input
+    .map((str) => getNum(str))
+    .filter((num) => !isNaN(num))
+    .sort((a, b) => a - b);
+
+console.log(res);
+*/
