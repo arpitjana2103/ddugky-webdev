@@ -211,6 +211,7 @@ Expected Output:
 ['a', 'b', 'c']
 */
 
+/*
 const input = [
     "banana",
     " Apple",
@@ -232,3 +233,4 @@ const res = Object.keys(
 ).sort((a, b) => a.localeCompare(b));
 
 console.log(res);
+*/
