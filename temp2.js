@@ -1,21 +1,28 @@
-const arr = ["a", "b", "c", "a", "b"];
+const Student = function (idValue, fNameValue) {
+    // {}
+    this.id = idValue;
+    this.fName = fNameValue;
+};
 
-let obj01 = {};
+Student.prototype.study = function () {
+    console.log(`${this.fName} is studing`);
+};
 
-let i = 0;
-while (i < arr.length) {
-    const key = arr[i];
-    const val = null;
+Student.prototype.sleep = function () {
+    console.log(`${this.fName} is sleeping`);
+};
 
-    obj01[key] = val;
-    i++;
-}
+const stu02 = new Student(22222, "Shivani");
+const stu01 = new Student(11111, "Sanjay");
+const stu03 = new Student(33333, "Swapna");
+const stu04 = new Student(44444, "Mahesh");
+const stu05 = new Student(55555, "Ajay");
 
-let obj02 = Object.keys(
-    arr.reduce(function (acc, ele) {
-        acc[ele] = null;
-        return acc;
-    }, {})
-);
+console.log(stu01);
+stu01.study();
+stu01.sleep();
 
-console.log(obj01, obj02);
+// 1. create {} in the Student() Constructor function
+// 2. Link Student()'s this to {}
+// 3. Link Student.prototype's this to {}
+// 4. return {};
