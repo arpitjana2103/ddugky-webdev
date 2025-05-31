@@ -12,15 +12,17 @@ Student.prototype.sleep = function () {
     console.log(`${this.fName} is sleeping`);
 };
 
-const stu02 = new Student(22222, "Shivani");
 const stu01 = new Student(11111, "Sanjay");
-const stu03 = new Student(33333, "Swapna");
-const stu04 = new Student(44444, "Mahesh");
-const stu05 = new Student(55555, "Ajay");
+const stu02 = new Student(11111, "Mahest");
 
-console.log(stu01);
-stu01.study();
-stu01.sleep();
+console.log(stu01.__proto__ === stu02.__proto__);
+console.log(Student.prototype === stu01.__proto__);
+console.log(Student.prototype.isPrototypeOf(stu01));
+console.log(Student.prototype.isPrototypeOf(Student));
+
+// [true] Student.prototype is the prototype of stu01,02,03
+// [false] Student.prototype is the prototype of Student
+// [true] Student.prototype is the property of Student
 
 // 1. create {} in the Student() Constructor function
 // 2. Link Student()'s this to {}
