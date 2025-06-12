@@ -1,30 +1,41 @@
-const Student = function (idValue, fNameValue) {
-    // {}
-    this.id = idValue;
-    this.fName = fNameValue;
-};
+// Bank Account Instance
+// Properties :
+// 1. Account No.
+// 2. Ower Name
+// 3. Phone No
+// 4. Pan No
+// 5. Transactions
+// 6. Total Balance
+// 7. Nominee
+// 8. Initial Blance
 
-Student.prototype.study = function () {
-    console.log(`${this.fName} is studing`);
-};
+// Methods :
+// 1. Deposite
+// 2. Withdraw
+// 3. TakeLoan
+// 4. ApproveLoan
+// 6. ShowAccountDetail
 
-Student.prototype.sleep = function () {
-    console.log(`${this.fName} is sleeping`);
-};
+// Static Properties
+// 1. Bank Name
+// 2. IFSC Code
+// 3. Branch Name
 
-const stu01 = new Student(11111, "Sanjay");
-const stu02 = new Student(11111, "Mahest");
+// Static Methods
+// 1.
 
-console.log(stu01.__proto__ === stu02.__proto__);
-console.log(Student.prototype === stu01.__proto__);
-console.log(Student.prototype.isPrototypeOf(stu01));
-console.log(Student.prototype.isPrototypeOf(Student));
+// # makes a property "Privet",
+// not witable not readable outside the class
+// to make it readOnly getter
 
-// [true] Student.prototype is the prototype of stu01,02,03
-// [false] Student.prototype is the prototype of Student
-// [true] Student.prototype is the property of Student
+// totalDeposite >= (500 --- 49,999)
+// AccountType : "Silver"
+// LoanAmount : 20,000
 
-// 1. create {} in the Student() Constructor function
-// 2. Link Student()'s this to {}
-// 3. Link Student.prototype's this to {}
-// 4. return {};
+// totalDeposite >= (50,000 --- 99,999)
+// AccountType : "Gold"
+// LoanAmount : 40000
+
+// totalDeposite >= (100,000 ---- inifnity)
+// AccountType : "Platinum"
+// LoanAmount : 70000
