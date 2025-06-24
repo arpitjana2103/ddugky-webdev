@@ -77,7 +77,7 @@ class BankAccount {
         return disiredLoanAmount <= loanAmount;
     }
 
-    applyLoan(disiredLoanAmount) {
+    _applyLoan(disiredLoanAmount) {
         if (this.approveLoan(disiredLoanAmount)) {
             this.deposit(disiredLoanAmount);
             console.log("Congratulations! Your loan has been approved.");
@@ -135,5 +135,3 @@ console.log(acc01.accountDetails);
 acc01.deposit(200);
 
 console.log(acc01.approveLoan(50000));
-
-console.log(acc01.accountType);
