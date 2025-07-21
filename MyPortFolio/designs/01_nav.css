@@ -1,4 +1,4 @@
-#header-section {
+#header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -16,7 +16,7 @@
     line-height: 0;
     margin-left: -0.5rem;
     margin-right: 2rem;
-    color: var(--color-red);
+    color: var(--color-green);
 }
 
 .nav-container {
@@ -45,18 +45,4 @@
 .header-options ion-icon[name="moon-outline"] {
     font-size: 2.5rem;
     --ionicon-stroke-width: 2rem;
-}
-
-.header-options ion-icon[name="paper-plane-outline"] {
-    font-size: 1.8rem;
-    --ionicon-stroke-width: 3rem;
-}
-
-.header-options .connect-btn {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    padding: 1.8rem 2.9rem;
-    border: var(--border-grey);
-    border-radius: var(--round);
 }

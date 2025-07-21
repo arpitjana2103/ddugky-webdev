@@ -1,8 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Color+Emoji&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
     --serif: "Noto Serif", serif;
     --sans-serif: "Inter", sans-serif;
+    --noto-emoji: "Noto Color Emoji", serif;
 
     --m-sm: 2rem;
     --m-md: 4rem;
@@ -18,13 +19,14 @@
 
     --fw-bold: 500;
 
-    --color-red: #f03e3e;
+    --color-green: #37b24d;
     --color-black: #343a40;
     --color-white: #f8f9fa;
 
     --round: 9999999999em;
 
     --border-grey: 1px solid #adb5bd;
+    --border-black: 1px solid var(--border-black);
 
     --shadow-01: rgba(0, 0, 0, 0.1) 0px 1px 4px;
 }
@@ -54,7 +56,8 @@ h4,
 h5,
 h6,
 p,
-a {
+a,
+button {
     font-weight: normal;
     font-size: 1.6rem;
     color: inherit;
@@ -78,7 +81,46 @@ button:hover {
     cursor: pointer;
 }
 
+.header,
 .section {
     max-width: 120rem;
     margin: 0 auto;
+}
+
+.section {
+    padding: 3rem 0;
+}
+
+.emoji {
+    font-family: var(--noto-emoji);
+}
+
+.btn-outline,
+.btn-filled {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.8rem 2.9rem;
+    border: var(--border-grey);
+    border-radius: var(--round);
+}
+
+.btn-outline ion-icon,
+.btn-filled ion-icon {
+    font-size: 1.8rem;
+    --ionicon-stroke-width: 3rem;
+}
+
+.btn-filled {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    border: var(--border-black);
+}
+
+.btn-outline:hover {
+    background-color: #343a401c;
+}
+
+.btn-filled:hover {
+    opacity: 0.85;
 }

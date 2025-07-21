@@ -1,0 +1,33 @@
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10rem;
+}
+
+#hero .profile {
+    height: 15rem;
+    border-radius: var(--round);
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+#hero .about {
+    text-align: center;
+    margin-bottom: 3.5rem;
+    opacity: 0.6;
+}
+#hero .title01 {
+    font-size: 2rem;
+}
+
+#hero .title02 {
+    font-size: 8rem;
+    margin-bottom: 1rem;
+    color: var(--color-green);
+}
+
+.home-btns {
+    display: flex;
+    gap: 2rem;
+}
