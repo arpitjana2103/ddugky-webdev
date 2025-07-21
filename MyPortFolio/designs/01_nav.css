@@ -1,0 +1,62 @@
+#header-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: var(--m-sm);
+}
+
+.logo-container h1 {
+    font-size: var(--fs-md);
+    font-family: var(--sans-serif);
+    font-weight: var(--fw-bold);
+}
+
+.logo-container span {
+    font-size: 4rem;
+    line-height: 0;
+    margin-left: -0.5rem;
+    margin-right: 2rem;
+    color: var(--color-red);
+}
+
+.nav-container {
+    width: 50rem;
+    padding: var(--p-md);
+    border-radius: var(--round);
+    box-shadow: var(--shadow-01);
+    background-color: white;
+}
+
+.nav-container nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-container nav span:hover {
+    opacity: 0.6;
+}
+
+.header-options {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.header-options ion-icon[name="moon-outline"] {
+    font-size: 2.5rem;
+    --ionicon-stroke-width: 2rem;
+}
+
+.header-options ion-icon[name="paper-plane-outline"] {
+    font-size: 1.8rem;
+    --ionicon-stroke-width: 3rem;
+}
+
+.header-options .connect-btn {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.8rem 2.9rem;
+    border: var(--border-grey);
+    border-radius: var(--round);
+}
