@@ -2,28 +2,29 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 10rem;
+    margin-top: var(--m-lg);
 }
 
 #hero .profile {
     height: 15rem;
     border-radius: var(--round);
     margin: 0 auto;
-    margin-bottom: 2rem;
+    margin-bottom: var(--m-sm);
 }
 
 #hero .about {
     text-align: center;
-    margin-bottom: 3.5rem;
+    margin-bottom: var(--m-md);
     opacity: 0.6;
 }
+
 #hero .title01 {
-    font-size: 2rem;
+    font-size: var(--fs-md);
+    margin-bottom: var(--m-md);
 }
 
 #hero .title02 {
-    font-size: 8rem;
-    margin-bottom: 1rem;
+    font-size: var(--fsh-lg);
     color: var(--color-green);
 }
 

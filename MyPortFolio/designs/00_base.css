@@ -5,17 +5,20 @@
     --sans-serif: "Inter", sans-serif;
     --noto-emoji: "Noto Color Emoji", serif;
 
-    --m-sm: 2rem;
-    --m-md: 4rem;
-    --m-lg: 6rem;
+    --m-sm: 1rem;
+    --m-md: 2rem;
+    --m-lg: 3.5rem;
 
     --p-sm: 1rem 1.5rem;
     --p-md: 1.8rem 4rem;
     --p-lg: 4rem 4.8rem;
 
     --fs-sm: 1.6rem;
-    --fs-md: 3rem;
-    --fs-lg: 5rem;
+    --fs-md: 2rem;
+
+    --fsh-sm: 3rem;
+    --fsh-md: 2rem;
+    --fsh-lg: 8rem;
 
     --fw-bold: 500;
 
@@ -36,7 +39,7 @@ html {
 }
 
 body {
-    font-size: 1.6rem;
+    font-size: var(--fs-sm);
     color: var(--color-black);
     background-color: var(--color-white);
 }
