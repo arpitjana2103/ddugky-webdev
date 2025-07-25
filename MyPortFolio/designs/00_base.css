@@ -5,13 +5,18 @@
     --sans-serif: "Inter", sans-serif;
     --noto-emoji: "Noto Color Emoji", serif;
 
+    --m-esm: 0.5rem;
     --m-sm: 1rem;
     --m-md: 2rem;
     --m-lg: 3.5rem;
 
-    --p-sm: 1rem 1.5rem;
-    --p-md: 1.8rem 4rem;
-    --p-lg: 4rem 4.8rem;
+    --p-sm: 0;
+    --p-md: 2.5rem;
+    --p-lg: 0;
+
+    --btn-p-sm: 1rem 1.5rem;
+    --btn-p-md: 1.8rem 4rem;
+    --btn-p-lg: 4rem 4.8rem;
 
     --fs-sm: 1.6rem;
     --fs-md: 2rem;
@@ -20,16 +25,25 @@
     --fsh-md: 2rem;
     --fsh-lg: 8rem;
 
+    --gap-sm: 1rem;
+    --gap-md: 2rem;
+
     --fw-bold: 500;
 
-    --color-green: #37b24d;
-    --color-black: #343a40;
-    --color-white: #f8f9fa;
+    --color-green: 55, 178, 77;
+    --color-black: 52, 58, 64;
+    --color-white: 248, 249, 250;
 
+    --bg-green: rgb(var(--color-green));
+    --bg-light-green: rgba(var(--color-green), 0.1);
+
+    --round-p5: 0.5rem;
+    --round-1: 0.6rem;
     --round: 9999999999em;
 
-    --border-grey: 1px solid #adb5bd;
-    --border-black: 1px solid var(--border-black);
+    --border-grey: 2px solid rgba(var(--color-black), 0.5);
+    --border-black: 2px solid rgba(var(--color-black), 1);
+    --border-green: 2px solid rgba(var(--color-green), 1);
 
     --shadow-01: rgba(0, 0, 0, 0.1) 0px 1px 4px;
 }
@@ -40,8 +54,8 @@ html {
 
 body {
     font-size: var(--fs-sm);
-    color: var(--color-black);
-    background-color: var(--color-white);
+    color: rgb(var(--color-black));
+    background-color: rgb(var(--color-white));
     font-family: var(--serif);
 }
 
@@ -97,6 +111,11 @@ button:hover {
     padding: 3rem 0;
 }
 
+.section > h2:first-child {
+    font-size: 4rem;
+    margin-bottom: var(--m-md);
+}
+
 .emoji {
     font-family: var(--noto-emoji);
 }
@@ -105,7 +124,7 @@ button:hover {
 .btn-filled {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: var(--gap-sm);
     padding: 1.8rem 2.9rem;
     border: var(--border-grey);
     border-radius: var(--round);
@@ -118,20 +137,25 @@ button:hover {
 }
 
 .btn-filled {
-    background-color: var(--color-black);
-    color: var(--color-white);
+    background-color: rgb(var(--color-black));
+    color: rgb(var(--color-white));
     border: var(--border-black);
 }
 
 .btn-outline:hover {
-    background-color: #343a401c;
+    background-color: rgba(var(--color-black), 0.1);
 }
 
 .btn-filled:hover {
-    opacity: 0.85;
+    background-color: rgba(var(--color-black), 0.9);
 }
 
 .btn-outline:hover ion-icon,
 .btn-filled:hover ion-icon {
     scale: 1.2;
+}
+
+.no-select {
+    pointer-events: none;
+    user-select: none;
 }

@@ -16,12 +16,12 @@
     line-height: 0;
     margin-left: -0.5rem;
     margin-right: 2rem;
-    color: var(--color-green);
+    color: rgb(var(--color-green));
 }
 
 .nav-container {
     width: 50rem;
-    padding: var(--p-md);
+    padding: var(--btn-p-md);
     border-radius: var(--round);
     box-shadow: var(--shadow-01);
     background-color: white;
@@ -39,7 +39,7 @@
 .header-options {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: var(--gap-md);
 }
 
 .header-options ion-icon[name="moon-outline"] {

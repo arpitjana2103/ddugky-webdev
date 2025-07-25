@@ -1,0 +1,41 @@
+.education-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--gap-md);
+}
+
+.education-container .education {
+    position: relative;
+    padding: var(--p-md);
+    background-color: var(--bg-light-green);
+    border-radius: var(--round-1);
+    box-shadow: var(--shadow-01);
+    border: var(--border-green);
+}
+
+.education h3 {
+    font-size: var(--fs-md);
+    color: rgb(var(--color-green));
+    margin-bottom: var(--m-sm);
+    font-family: var(--sans-serif);
+}
+
+.education p:nth-child(3) {
+    opacity: 0.8;
+    margin-top: var(--m-esm);
+}
+
+.education .count {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    height: 3rem;
+    width: 3rem;
+    border-radius: var(--round-p5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(var(--color-green));
+    font-weight: bold;
+    border: var(--border-green);
+}
