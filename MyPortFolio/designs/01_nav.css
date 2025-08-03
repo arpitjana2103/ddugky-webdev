@@ -6,7 +6,7 @@
 }
 
 .logo-container h1 {
-    font-size: var(--fsh-sm);
+    font-size: 3rem;
     font-family: var(--sans-serif);
     font-weight: var(--fw-bold);
 }
@@ -23,7 +23,7 @@
     width: 50rem;
     padding: var(--btn-p-md);
     border-radius: var(--round);
-    box-shadow: var(--shadow-01);
+    box-shadow: var(--shadow-grey);
     background-color: white;
 }
 

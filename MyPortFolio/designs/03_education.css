@@ -7,21 +7,26 @@
 .education-container .education {
     position: relative;
     padding: var(--p-md);
-    background-color: var(--bg-light-green);
+    background-color: var(--bg-white);
     border-radius: var(--round-1);
-    box-shadow: var(--shadow-01);
-    border: var(--border-green);
+    box-shadow: var(--shadow-grey-2);
+    border: var(--border-grey);
+    cursor: pointer;
+}
+
+.education-container .education:hover {
+    box-shadow: 0px 0px 0px -1px rgb(var(--color-green));
 }
 
 .education h3 {
-    font-size: var(--fs-md);
+    font-size: var(--fsh-md);
     color: rgb(var(--color-green));
     margin-bottom: var(--m-sm);
     font-family: var(--sans-serif);
 }
 
 .education p:nth-child(3) {
-    opacity: 0.8;
+    opacity: var(--txt-opacity);
     margin-top: var(--m-esm);
 }
 

@@ -1,6 +1,6 @@
 #skills img {
     height: 7.8rem;
-    box-shadow: var(--shadow-01);
+    box-shadow: var(--shadow-grey);
     border-radius: var(--round-1);
 }
 #skills span {

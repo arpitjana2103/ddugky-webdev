@@ -18,7 +18,7 @@
 #hero .about {
     text-align: center;
     margin-bottom: var(--m-lg);
-    opacity: 0.6;
+    opacity: var(--txt-opacity);
     max-width: 100rem;
     line-height: 2.5rem;
 }

@@ -20,12 +20,13 @@
     --btn-p-lg: 4rem 4.8rem;
 
     --fs-esm: 1.4rem;
-    --fs-sm: 1.6rem;
+    --fs-sm: 1.5rem;
     --fs-md: 2rem;
 
-    --fsh-sm: 3rem;
     --fsh-md: 2rem;
     --fsh-lg: 8rem;
+
+    --txt-opacity: 0.7;
 
     --gap-sm: 1rem;
     --gap-md: 2rem;
@@ -35,23 +36,30 @@
     --color-green: 55, 178, 77;
     --color-black: 52, 58, 64;
     --color-white: 248, 249, 250;
+    --color-grey: rgba(var(--color-black), 0.7);
 
     --bg-green: rgb(var(--color-green));
-    --bg-light-green: rgba(var(--color-green), 0.1);
+    --bg-light-green: rgba(var(--color-green), 0.05);
+    --bg-white: rgb(255, 255, 255);
+    --bg-grey: var(--color-grey);
 
     --round-p5: 0.5rem;
     --round-1: 0.6rem;
     --round: 9999999999em;
 
-    --border-grey: 2px solid rgba(var(--color-black), 0.5);
+    --border-grey: 2px solid var(--color-grey);
     --border-black: 2px solid rgba(var(--color-black), 1);
     --border-green: 2px solid rgba(var(--color-green), 1);
 
-    --shadow-01: rgba(0, 0, 0, 0.1) 0px 1px 4px;
+    --shadow-grey: rgba(0, 0, 0, 0.1) 0px 1px 4px;
+    --shadow-green: 6px 6px 0px -1px rgb(var(--color-green));
+    --shadow-grey-2: 6px 6px 0px -1px var(--color-grey);
 }
 
 html {
     font-size: 10px;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
 }
 
 body {

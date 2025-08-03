@@ -1,0 +1,83 @@
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: var(--gap-md);
+}
+
+.service-cards .card {
+    border-radius: var(--round-1);
+    padding: var(--p-md);
+    box-shadow: var(--shadow-grey-2);
+    border: var(--border-grey);
+    cursor: pointer;
+    background-color: var(--bg-white);
+}
+
+.service-cards .card h3 {
+    font-size: var(--fsh-md);
+    color: rgb(var(--color-green));
+    margin-top: var(--m-md);
+    margin-bottom: var(--m-sm);
+    font-family: var(--sans-serif);
+}
+
+.service-cards .card p {
+    opacity: var(--txt-opacity);
+    line-height: 2.5rem;
+}
+
+.service-cards .card .icon-box {
+    height: 8rem;
+    width: 8rem;
+    position: relative;
+}
+
+.icon-box ion-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: rgb(var(--color-green));
+}
+
+/* Orbit Rotation */
+.orbit {
+    height: 100%;
+    width: 100%;
+    border-radius: var(--round);
+    border: 2px dashed var(--color-grey);
+}
+
+.rotate {
+    height: 100%;
+    width: 100%;
+    animation: rotation 5s linear infinite;
+    animation-play-state: paused;
+}
+
+.rotate > .circle {
+    height: 1.4rem;
+    width: 1.4rem;
+    background-color: var(--bg-green);
+    border-radius: var(--round);
+    margin-left: 1rem;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 0px -1px rgb(var(--color-green));
+}
+
+.card:hover .rotate {
+    animation-play-state: running;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
