@@ -1,0 +1,58 @@
+footer {
+    background-color: var(--bg-green);
+    color: rgb(var(--color-white));
+}
+
+footer h2 {
+    opacity: 1 !important;
+}
+
+footer .git-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+
+footer .contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+footer .contact-links a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+footer .contact-links a ion-icon {
+    font-size: 1.9rem;
+}
+
+footer p {
+    padding-bottom: 2rem;
+}
+
+footer input,
+footer textarea {
+    border: none;
+    border-radius: 1rem;
+    padding: 1.5rem 2rem;
+    font-family: var(--sans-serif);
+    font-size: inherit;
+    margin-bottom: 1.5rem;
+}
+
+footer form button.send-message-btn {
+    width: fit-content;
+    background-color: var(--bg-white);
+    border: none;
+    color: rgb(var(--color-black));
+    margin-left: auto;
+}
+
+footer form button.send-message-btn:hover {
+    background-color: var(--bg-white);
+}
+
+footer .love-message {
+    text-align: center;
+}

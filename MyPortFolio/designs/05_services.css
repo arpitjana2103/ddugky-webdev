@@ -54,7 +54,7 @@
     height: 100%;
     width: 100%;
     animation: rotation 5s linear infinite;
-    animation-play-state: paused;
+    animation-play-state: running;
 }
 
 .rotate > .circle {
